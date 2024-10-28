@@ -28,6 +28,7 @@ import Football from "./pages/Football";
 import Score from "./pages/Score";
 import Cricketstats from "./pages/Cricketstats";
 import Footballstats from "./pages/Footballstats";
+import Nba from "./pages/Nba";
 
 // protect routes that require authentication
 const ProtectedRoute = ({ children }) => {
@@ -106,7 +107,7 @@ function App() {
           path="/Cricketstats"
           element={
             <ProtectedRoute>
-              <Cricketstats/>
+              <Cricketstats />
             </ProtectedRoute>
           }
         />
@@ -114,7 +115,15 @@ function App() {
           path="/Footballstats"
           element={
             <ProtectedRoute>
-              <Footballstats/>
+              <Footballstats />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/NbaScores"
+          element={
+            <ProtectedRoute>
+              <Nba />
             </ProtectedRoute>
           }
         />
@@ -122,7 +131,7 @@ function App() {
           path="/Score"
           element={
             <ProtectedRoute>
-              <Score/>
+              <Score />
             </ProtectedRoute>
           }
         />
