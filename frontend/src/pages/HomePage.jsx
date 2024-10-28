@@ -1,20 +1,14 @@
-import React from "react";
-import { useAuthStore } from "../store/authStore";
+import React from 'react'
+import Nav from '../components/Nav'
+import ImageSlider from '../components/Imageslider'
 
-import Nav from "../components/Nav";
-
-
-const page = () => {
-  const { user } = useAuthStore();
+const HomePage = () => {
   return (
-    <div className="bg-white text-black">
+    <div className='bg-white'>
       <Nav/>
-      <div className="text-3xl mt-3 p-5 font-mono">
-        Hello {user.name}, Welcome to AthleteHub. We are under production at the
-        moment, will update you soon.
-      </div>
+      <ImageSlider/>
     </div>
-  );
-};
+  )
+}
 
-export default page;
+export default HomePage

@@ -8,7 +8,7 @@ const Newsnav = () => {
     <><h1 className='text-white flex items-center justify-center mt-8 text-5xl font-semibold'>Latest Updates</h1>
    
 
-<nav className='flex list-none ml-14 mt-10 border p-2 rounded-xl' style={{width:"35vw"}}>
+<nav className='flex list-none ml-14 mt-10 border p-2 rounded-xl bg-black' style={{width:"35vw"}}>
   <NavLink 
     to={'/News'} 
     className={({ isActive }) => isActive ? ' text-white ml-16 text-2xl font-semibold underline ' : 'ml-16 text-2xl font-semibold'}
